@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>news</title>
+    <style>
+        body{
+  background:#F2CF8D;
+  margin:50px;
+}
+
+.shownews {
+  font-weight:700;
+  color:#fff;
+  text-transform: uppercase;
+  font-family: open sans;
+}
+
+.shownews .title { 
+  background:#F23E16;
+  display:inline-block;
+  padding:8px 16px;
+  clip-path: polygon(0px 0px, 100% 0, 100% 100%, 0px 100%);
+  animation: mask 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function:ease;
+}
+
+ .shownews #news { 
+  background: #037F8C;
+  display:inline-block;
+  padding:8px 16px;
+  clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+  animation: mask 2s;
+  animation-iteration-count: 1;
+  animation-timing-function:ease;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+.shownews #news a{
+  color:#fff; 
+  text-decoration:none;
+} 
+
+@keyframes mask {
+  0% {
+    clip-path: polygon(0px 0px, 0% 0, 0% 100%, 0px 100%);
+  }
+  100% {
+    clip-path: polygon(0px 0px, 100% 0, 100% 100%, 0px 100%);
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="shownews" >
+        <div class="title">News </div>
+        <div id="news">For information on covid-19 vaccine</div>
+        <div style="text-align: center; background-color: rgb(104, 92, 77); border-radius: 5px;margin: 20px; font-weight: bolder;padding: 10px 20px;">For more information click on below links</div>
+        <br><br>
+        <a href="https://www.mygov.in/covid-19" style="text-align: center; background-color: rgb(146, 135, 122); border-radius: 5px;margin: 20px; font-weight: bolder;padding: 10px 20px;">click</a>
+      </div>
+      <div style="border: 3px solid black; background-color: white; padding: 20px 20px; margin-top: 5rem;">
+       <p>Impact:</p> 
+       <p>Your donation will help:</p>
+       <p>        Create awareness on the importance of vaccination
+    </p> 
+       <p>        Help rural India access easy and quicker vaccination
+    </p> 
+       <p>        Help India beat COVID-19
+    </p> 
+        
+        
+        
+      </div>
+</body>
+</html>

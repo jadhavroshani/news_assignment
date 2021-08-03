@@ -136,6 +136,8 @@
     background-color: rgb(204, 94, 145);
     border-radius: 200px;
 }
+
+  
 .f .right {
     transform: rotateY(90deg) translateZ(10px);
       background-color: rgb(85, 161, 145);
@@ -159,4 +161,15 @@
     position: -webkit-sticky;
     top: 450px;
   
+}
+
+.stop:hover{
+   
+        -webkit-animation-play-state:paused;
+        -moz-animation-play-state:paused;
+        -o-animation-play-state:paused;
+        animation-play-state:paused;
+        cursor: pointer;
+      
+      
 }
